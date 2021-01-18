@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #ffffff;
@@ -14,6 +22,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--background-color);
   color: var(--main-text-color);
   font-family: Roboto, sans-serif;
@@ -22,14 +31,27 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 a {
   text-decoration: none;
   font-style: normal;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+  outline: 2px solid blue;
+}
 
 /* Шапка сайта */
 
+.header-portfolio {
+  margin-bottom: 77px;
+}
 .logo {
   color: var(--logo-color-text);
   font-family: Raleway;
@@ -52,10 +74,12 @@ a {
 .link-nav:focus {
   color: var(--acent-color);
 }
-.site-nav.link-nav.current {
+.link-nav.current {
   color: var(--acent-color);
 }
+
 /* .tel-mail */
+
 .tel-mail {
   color: var(--ouwer-text-color);
   font-weight: 500;
@@ -71,7 +95,23 @@ a {
 /* studio */
 
 /* Hero studio */
+
+.hero-section {
+  text-align: center;
+  background-color: var(--background-footer-color);
+}
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-button {
+  min-width: 200px;
+  display: inline-block;
+  border: 0px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   color: var(--background-color);
   background-color: var(--acent-color);
   cursor: pointer;
@@ -82,37 +122,77 @@ a {
   letter-spacing: 0.06em;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   color: var(--secondary-text-color);
-  background-color: var(--background-footer-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
+
 /* Features */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title-hide {
+  padding: 0px;
+  margin: 0px;
+}
 .features-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .features-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--ouwer-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-.section-title {
+
+/* Чем мы занимаемся */
+.work {
+  margin-bottom: 94px;
+}
+.section-title-work {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
+
 /* Team */
+
 .team-section {
-  background-color: var(--background-section);
+  background-color: var(--buttons-port-color);
+}
+.section-title-team {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-name {
   font-weight: 500;
@@ -125,9 +205,11 @@ a {
   font-size: 16px;
   line-height: 1.18;
 }
+
 /* portfolio */
 
-/* buttons portfolio */
+/* filters portfolio */
+
 .button {
   color: var(--main-text-color);
   background-color: var(--buttons-port-color);
@@ -143,14 +225,27 @@ a {
   background-color: var(--acent-color);
   cursor: pointer;
 }
+
 /* Galery of projects */
+
+.portfolio-section {
+  margin-bottom: 94px;
+}
+
 .project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+
   color: var(--ouwer-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -158,24 +253,41 @@ a {
 }
 
 /* Footer */
-.logo-footer {
-  color: var(--secondary-text-color);
+
+.footer-background {
   background-color: var(--main-text-color);
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 .tel-mail-footer {
+  display: inline-block;
+  margin-bottom: 9px;
+
   color: var(--footer-text-color);
-  background-color: var(--background-footer-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
+.tel {
+  margin-bottom: 0px;
+}
 .footer-map {
+  display: inline-block;
+  margin-bottom: 9px;
+
   color: var(--secondary-text-color);
-  background-color: var(--background-footer-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
