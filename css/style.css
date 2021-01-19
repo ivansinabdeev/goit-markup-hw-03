@@ -63,6 +63,17 @@ a {
   color: var(--acent-color);
 }
 /* site-nav */
+
+.site-nav {
+  display: flex;
+}
+.site-nav .item {
+  outline: 1px solid red;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
 .link-nav {
   color: var(--main-text-color);
   font-weight: 500;
