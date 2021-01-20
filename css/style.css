@@ -91,6 +91,16 @@ a {
 
 /* .tel-mail */
 
+.kontakt-nav {
+  display: flex;
+}
+.kontakt-nav .item {
+  outline: 1px solid red;
+  margin-right: 50px;
+}
+.kontakt-nav .item:last-child {
+  margin-right: 0px;
+}
 .tel-mail {
   color: var(--ouwer-text-color);
   font-weight: 500;
