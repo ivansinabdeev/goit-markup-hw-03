@@ -43,7 +43,7 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
+  width: 1230px;
   outline: 2px solid blue;
 }
 
@@ -177,8 +177,14 @@ a {
   height: 101px;
 }
 .title-hide {
-  padding: 0px;
-  margin: 0px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .features-title {
   margin-top: 0px;
@@ -268,10 +274,27 @@ a {
 .portfolio-section {
   margin-bottom: 94px;
 }
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project {
+  width: 370px;
+  border: 1px solid var(--contener-color);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project:nth-child(3n) {
+  margin-right: 0px;
+}
+.project:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
 
 .project-title {
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-left: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -280,6 +303,7 @@ a {
 }
 .project-name {
   margin-top: 0px;
+  margin-left: 24px;
   margin-bottom: 0px;
   padding-bottom: 20px;
 
