@@ -29,12 +29,25 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+ul,
+ol {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-a {
+img {
+  display: block;
+}
+.link {
   text-decoration: none;
   font-style: normal;
 }
