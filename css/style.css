@@ -70,9 +70,9 @@ img {
 /* .line {
   border: 1px solid var(--line-color);
 } */
-.portfolio-header {
-  padding-bottom: 77px;
-}
+/* .portfolio-header {
+  
+} */
 .header-portfolio {
   display: flex;
   align-items: center;
@@ -350,7 +350,7 @@ img {
 /* Galery of projects */
 
 .portfolio-section {
-  padding-bottom: 94px;
+  padding-top: 77px;
 }
 .project-card {
   display: flex;
@@ -393,7 +393,10 @@ img {
 .footer-background {
   background-color: var(--main-text-color);
 }
-.footer {
+.footer-portfolio {
+  padding-top: 94px;
+}
+.footer-portfolio .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
