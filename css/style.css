@@ -351,6 +351,7 @@ img {
 
 .portfolio-section {
   padding-top: 77px;
+  padding-bottom: 94px;
 }
 .project-card {
   display: flex;
@@ -393,8 +394,12 @@ img {
 .footer-background {
   background-color: var(--main-text-color);
 }
-.footer-portfolio {
+/* .footer-portfolio {
   padding-top: 94px;
+} */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-portfolio .footer {
   padding-top: 60px;
